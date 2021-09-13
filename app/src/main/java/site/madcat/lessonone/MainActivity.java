@@ -13,22 +13,21 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    TextView textView;
-    EditText editText;
+    TextView textViewLog;
     Button buttonlog;
     Button buttonnext;
-    Switch switch1;
+    Switch switchTest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         final Intent intsec = new Intent(this, SecondActivity.class);
-        TextView textView = (TextView) findViewById(R.id.textView);
-        EditText editText = (EditText) findViewById(R.id.editText);
-        buttonlog = (Button) findViewById(R.id.button);
-        Switch switch1 = (Switch) findViewById(R.id.switch1);
-        textView.setText("Программа запустилась;");
+        TextView textViewLog = (TextView) findViewById(R.id.textViewLog);
+        EditText editText = (EditText) findViewById(R.id.editTextTest);
+        buttonlog = (Button) findViewById(R.id.buttonSimply);
+        Switch switchTest = (Switch) findViewById(R.id.switchTest);
+        textViewLog.setText("Программа запустилась;");
         buttonnext = (Button) findViewById(R.id.buttonNextActivity);
 
 
@@ -37,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 switch (motionEvent.getAction()) {
                     case MotionEvent.ACTION_DOWN:
-                        textView.setText(textView.getText() + "\nВы нажали 'просто кнопку';");
+                        textViewLog.setText(textViewLog.getText() + "\nВы нажали 'просто кнопку';");
                         break;
                     case MotionEvent.ACTION_UP:
-                        textView.setText(textView.getText() + "\nВы отпустили 'просто кнопку';");
+                        textViewLog.setText(textViewLog.getText() + "\nВы отпустили 'просто кнопку';");
                         break;
                 }
                 return false;
@@ -57,13 +56,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        switch1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        switchTest.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) //Line A
             {
                 if (isChecked) {
-                    textView.setText(textView.getText() + "\nSwitch включен;");
+                    textViewLog.setText(textViewLog.getText() + "\nSwitch включен;");
                 } else {
-                    textView.setText(textView.getText() + "\nSwitch выключен;");
+                    textViewLog.setText(textViewLog.getText() + "\nSwitch выключен;");
                 }
             }
         });

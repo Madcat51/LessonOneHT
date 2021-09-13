@@ -11,17 +11,17 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
-    Button button1;
-    Button button2;
+    Button buttonAuth;
+    Button buttonBack;
     Button buttonprevAct;
     CalendarView calendarView;
     LinearLayout layout1;
     LinearLayout layout2;
     TextView textView;
-    EditText textText;
-    EditText textPersonal;
+    EditText textFirstName;
+    EditText textSecondName;
     EditText textPhone;
-    EditText textNumber;
+    EditText textPinCode;
     EditText textMail;
     EditText textPass;
 
@@ -30,19 +30,19 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-        button1 = (Button) findViewById(R.id.button1);
-        button2 = (Button) findViewById(R.id.button2);
+        buttonAuth = (Button) findViewById(R.id.buttonAuth);
+        buttonBack = (Button) findViewById(R.id.buttonBack);
         buttonprevAct = (Button) findViewById(R.id.buttonPrevActivity);
         calendarView = (CalendarView) findViewById(R.id.calendarView);
         layout1 = (LinearLayout) findViewById(R.id.layout1);
         layout2 = (LinearLayout) findViewById(R.id.layout2);
         textView = (TextView) findViewById(R.id.textView2);
-        textText = (EditText) findViewById(R.id.editTextSecActiv);
-        textPersonal = (EditText) findViewById(R.id.editTextTextPersonName2);
+        textFirstName= (EditText) findViewById(R.id.editTextFirstName);
+        textSecondName = (EditText) findViewById(R.id.editTextSecondName);
         textPhone = (EditText) findViewById(R.id.editTextPhone);
-        textNumber = (EditText) findViewById(R.id.editTextNumber);
-        textMail = (EditText) findViewById(R.id.editTextTextEmailAddress);
-        textPass = (EditText) findViewById(R.id.editTextTextPassword);
+        textPinCode = (EditText) findViewById(R.id.editTextPInCode);
+        textMail = (EditText) findViewById(R.id.editTextEmailAddress);
+        textPass = (EditText) findViewById(R.id.editTextPassword);
 
         buttonprevAct.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +52,7 @@ public class SecondActivity extends AppCompatActivity {
         });
 
 
-        button1.setOnClickListener(new View.OnClickListener() {
+        buttonAuth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -60,14 +60,14 @@ public class SecondActivity extends AppCompatActivity {
                 layout1.setVisibility(View.INVISIBLE);
                 layout2.setVisibility(View.VISIBLE);
                 textView.setText("На предыдущем экране вы ввели:" +
-                        "\n в поле текст:" + textText.getText() + "\n в поле textPersonName:"
-                        + textPersonal.getText() + "\n в поле телефон:" + textPhone.getText() +
-                        "\n в поле число:" + textNumber.getText() + "\n в поле пароль - не скажу" +
+                        "\n в поле Имя:" +  textFirstName.getText() + "\n в поле Фамилия:"
+                        +  textSecondName.getText() + "\n в поле телефон:" + textPhone.getText() +
+                        "\n в поле Pin Вашей карты:" + textPinCode.getText() + "\n в поле пароль - не скажу" +
                         "\n в поле email:" + textMail.getText());
 
             }
         });
-        button2.setOnClickListener(new View.OnClickListener() {
+        buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 

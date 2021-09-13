@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textViewLog"
             android:layout_width="match_parent"
             android:layout_height="356dp"
             android:lines="15"
@@ -26,7 +26,7 @@
             android:textSize="24sp" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/editTextTest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -37,20 +37,20 @@
             android:textStyle="bold|italic" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonSimply"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/but_name" />
 
         <Switch
-            android:id="@+id/switch1"
+            android:id="@+id/switchTest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Switch"
             android:track="@color/purple_700" />
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/checkBoxSimply"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
@@ -60,7 +60,7 @@
             android:textColor="@color/teal_200" />
 
         <ToggleButton
-            android:id="@+id/toggleButton"
+            android:id="@+id/toggleButtonI_Dont_Know_Why"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"

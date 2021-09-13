@@ -4,11 +4,13 @@
     <string name="but_name_next_activity">Кнопка для перехода к следуйщей Activity</string>
     <string name="but_name_prev_activity">Кнопка для перехода к предыдущей Activity, хотя можно и назад нажать...</string>
     <string name="but_back">Назад</string>
-    <string name="but_forward">Вперед</string>
+    <string name="but_auth">Авторизоватся</string>
     <string name="mail">E-mail</string>
     <string name="pass">Пароль</string>
-    <string name="numb">Только число</string>
+    <string name="numb">Pin Вашей зарплатной карты</string>
     <string name="text">Текст</string>
+    <string name="FirstName">Имя</string>
+    <string name="SecondName">Фамилия</string>
     <string name="phone">Телефон</string>
     <string name="pers">textPersonName</string>
 </resources>
