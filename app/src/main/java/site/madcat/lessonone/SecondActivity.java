@@ -37,7 +37,7 @@ public class SecondActivity extends AppCompatActivity {
         layout1 = (LinearLayout) findViewById(R.id.layout1);
         layout2 = (LinearLayout) findViewById(R.id.layout2);
         textView = (TextView) findViewById(R.id.textView2);
-        textFirstName= (EditText) findViewById(R.id.editTextFirstName);
+        textFirstName = (EditText) findViewById(R.id.editTextFirstName);
         textSecondName = (EditText) findViewById(R.id.editTextSecondName);
         textPhone = (EditText) findViewById(R.id.editTextPhone);
         textPinCode = (EditText) findViewById(R.id.editTextPInCode);
@@ -60,8 +60,8 @@ public class SecondActivity extends AppCompatActivity {
                 layout1.setVisibility(View.INVISIBLE);
                 layout2.setVisibility(View.VISIBLE);
                 textView.setText("На предыдущем экране вы ввели:" +
-                        "\n в поле Имя:" +  textFirstName.getText() + "\n в поле Фамилия:"
-                        +  textSecondName.getText() + "\n в поле телефон:" + textPhone.getText() +
+                        "\n в поле Имя:" + textFirstName.getText() + "\n в поле Фамилия:"
+                        + textSecondName.getText() + "\n в поле телефон:" + textPhone.getText() +
                         "\n в поле Pin Вашей карты:" + textPinCode.getText() + "\n в поле пароль - не скажу" +
                         "\n в поле email:" + textMail.getText());
 
